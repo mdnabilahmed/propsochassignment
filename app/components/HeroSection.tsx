@@ -51,7 +51,7 @@ export default function HeroSection() {
                 <span className="relative z-10">negotiate</span>
                 <span
                   aria-hidden="true"
-                  className="absolute left-0 bottom-1 w-full h-3 bg-orange-200/70 rounded-sm -z-0"
+                  className="absolute left-0 bottom-1 w-full h-3 bg-orange-200/70 rounded-sm"
                 />
               </span>{" "}
               smarter &amp; buy{" "}
@@ -71,7 +71,7 @@ export default function HeroSection() {
 
             <ul
               aria-label="Key stats"
-              className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8 text-[13px] text-gray-500 font-medium list-none p-0"
+              className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8 text-[13px] text-gray-500 font-medium"
             >
               <li className="flex items-center gap-1.5">
                 <Star
@@ -153,11 +153,11 @@ export default function HeroSection() {
           <div className="relative flex items-center justify-center lg:justify-end mt-6 lg:mt-0">
             <div
               aria-hidden="true"
-              className="absolute right-4 lg:right-0 top-4 w-[260px] sm:w-[320px] lg:w-[380px] h-[260px] sm:h-[320px] lg:h-[380px] bg-gradient-to-br from-[#fff3ec] to-[#fde8d5] rounded-[60px] -rotate-6 z-0"
+              className="absolute right-4 lg:right-0 top-4 w-[260px] sm:w-[320px] lg:w-[380px] h-[260px] sm:h-[320px] lg:h-[380px] bg-gradient-to-br from-[#fff3ec] to-[#fde8d5] rounded-[60px] -rotate-6"
             />
             <div
               aria-hidden="true"
-              className="absolute right-12 lg:right-8 bottom-4 w-[180px] sm:w-[220px] lg:w-[260px] h-[180px] sm:h-[220px] lg:h-[260px] bg-gradient-to-br from-[#fef5e6] to-[#fde8b0] rounded-[50px] rotate-12 z-0"
+              className="absolute right-12 lg:right-8 bottom-4 w-[180px] sm:w-[220px] lg:w-[260px] h-[180px] sm:h-[220px] lg:h-[260px] bg-gradient-to-br from-[#fef5e6] to-[#fde8b0] rounded-[50px] rotate-12"
             />
 
             <div
@@ -233,7 +233,7 @@ export default function HeroSection() {
 
                   <div className="absolute inset-0 flex items-center justify-center z-20">
                     <div
-                      className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-xl ring-4 ring-white/40"
+                      className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-xl"
                       aria-label="Play intro video"
                     >
                       <Play
@@ -251,7 +251,7 @@ export default function HeroSection() {
                       style={{ border: 0 }}
                       src="https://www.youtube.com/embed/RqBYQJRqUXs?autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0"
                       title="Propsoch Guided Homebuying Program intro video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="autoplay; fullscreen"
                       allowFullScreen
                     />
                   </div>
@@ -319,9 +319,7 @@ export default function HeroSection() {
                 <p className="text-[13px] font-bold text-gray-900">
                   200+ Homes
                 </p>
-                <p className="text-[10px] text-gray-400 leading-none">
-                  sold last year
-                </p>
+                <p className="text-[10px] text-gray-400">sold last year</p>
               </div>
             </div>
           </div>

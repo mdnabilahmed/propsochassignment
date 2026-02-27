@@ -107,7 +107,7 @@ export default function TestimonialsCarousel() {
   return (
     <section
       aria-label="Homeowner Testimonials"
-      className="w-full bg-[#f8f9fa] pt-20 lg:pt-28 pb-24 lg:pb-36 border-t-2 border-gray-100"
+      className="bg-[#f8f9fa] pt-20 lg:pt-28 pb-24 lg:pb-36 border-t-2 border-gray-100"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 mb-14 flex flex-col sm:flex-row sm:items-end justify-between gap-8">
         <div>
@@ -143,7 +143,7 @@ export default function TestimonialsCarousel() {
             onClick={scrollLeft}
             aria-label="Previous testimonial"
             disabled={currentIndex === 0}
-            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:text-[#ff6b35] hover:border-orange-200 hover:bg-orange-50 hover:shadow-md hover:shadow-orange-100/50 transition-all duration-300 bg-white disabled:opacity-30 disabled:cursor-default"
+            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:text-[#ff6b35] hover:border-orange-200 hover:bg-orange-50 hover:shadow-md transition-all bg-white disabled:opacity-30 disabled:cursor-default"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -151,7 +151,7 @@ export default function TestimonialsCarousel() {
             onClick={scrollRight}
             aria-label="Next testimonial"
             disabled={currentIndex === testimonials.length - 1}
-            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:text-[#ff6b35] hover:border-orange-200 hover:bg-orange-50 hover:shadow-md hover:shadow-orange-100/50 transition-all duration-300 bg-white disabled:opacity-30 disabled:cursor-default"
+            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:text-[#ff6b35] hover:border-orange-200 hover:bg-orange-50 hover:shadow-md transition-all bg-white disabled:opacity-30 disabled:cursor-default"
           >
             <ChevronRight className="w-5 h-5" />
           </button>

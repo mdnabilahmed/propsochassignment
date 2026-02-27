@@ -277,7 +277,7 @@ function MobileMenu({ navData }: { navData: NavItemConfig[] }) {
                 key={item.title}
                 className="flex flex-col mb-4 bg-gray-50/50 rounded-xl"
               >
-                <div className="flex items-center justify-between w-full px-4 py-3 text-gray-800 font-semibold border-b border-gray-100/50">
+                <div className="flex items-center justify-between px-4 py-3 text-gray-800 font-semibold border-b border-gray-100/50">
                   {item.title}
                 </div>
                 <div className="flex flex-col gap-1 p-2">
@@ -371,19 +371,19 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center gap-1 mr-3 border-r border-gray-100 pr-3">
               <button
                 aria-label="Search"
-                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-all duration-200"
+                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-colors"
               >
                 <Search className="w-[18px] h-[18px]" aria-hidden="true" />
               </button>
               <button
                 aria-label="Share"
-                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-all duration-200"
+                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-colors"
               >
                 <Share2 className="w-[18px] h-[18px]" aria-hidden="true" />
               </button>
               <button
                 aria-label="Wishlist"
-                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-all duration-200"
+                className="flex items-center justify-center w-9 h-9 rounded-xl text-gray-500 hover:text-[#ff6b35] hover:bg-orange-50 transition-colors"
               >
                 <Heart className="w-[18px] h-[18px]" aria-hidden="true" />
               </button>

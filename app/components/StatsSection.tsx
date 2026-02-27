@@ -9,10 +9,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section
-      aria-label="Stats and social proof"
-      className="w-full bg-white pb-12"
-    >
+    <section aria-label="Stats and social proof" className="bg-white pb-12">
       <div className="relative border-t border-b border-gray-100 overflow-hidden">
         <div
           aria-hidden="true"
@@ -30,7 +27,7 @@ export default function StatsSection() {
                 key={i}
                 className="group flex flex-col items-center justify-center text-center px-6 py-8 bg-gradient-to-b from-orange-50/60 to-transparent [&:hover]:bg-orange-50/80 transition-colors duration-300"
               >
-                <dt className="order-2 mt-2.5 text-[12px] text-gray-500 font-medium leading-snug max-w-[130px]">
+                <dt className="order-2 mt-2.5 text-[12px] text-gray-500 font-medium leading-snug">
                   {stat.label}
                 </dt>
                 <dd className="order-1 text-[40px] sm:text-[48px] font-extrabold text-gray-900 leading-none tracking-tight [.group:hover_&]:text-[#ff6b35] transition-colors duration-300">
