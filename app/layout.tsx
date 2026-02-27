@@ -1,9 +1,15 @@
 import React from "react";
 import "./globals.css";
 import Navbar from "./components/navbar";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Caveat } from "next/font/google";
 
 const font = Space_Grotesk({ subsets: ["latin"], display: "swap" });
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  display: "swap",
+  variable: "--font-caveat",
+});
 
 export default function RootLayout({
   children,
@@ -12,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} min-h-screen antialiased`}>
+      <body
+        className={`${font.className} ${caveat.variable} min-h-screen antialiased`}
+      >
         <Navbar />
         {children}
       </body>
