@@ -49,27 +49,22 @@ Performance Metrics (Desktop)
 one thing i notice every time i run lighthouse it gives different results and why, Lighthouse is a simulated performance test not a static measurement. Each run recreates loading conditions again and many variables change.
 
 
-what i noticed 
-``
-desktop's LCP is 0.9s and mobile's LCP is 3.5s why is there such a big difference so for that i ran 
+what I noticed
 
-``
-``
-TBT is 4370ms on mobile and 750ms on desktop why is there such a big difference 
-``
+desktop's LCP is 0.9s and mobile's LCP is 3.5s — the difference happens because Lighthouse simulates a slower mobile device. Large images and layout rendering take more time on mobile, so the main content appears later.
 
-``
-FCP is 2.6s on mobile and 0.7s on desktop why is there such a big difference 
-``
+TBT is 4370ms on mobile and 750ms on desktop — mobile CPU is throttled during testing, so JavaScript execution takes longer and blocks the browser for more time.
 
-``
-Speed Index is 3.6s on mobile and 1.2s on desktop why is there such a big difference 
+FCP is 2.6s on mobile and 0.7s on desktop — render-blocking resources like CSS, fonts, and scripts load slower on mobile, delaying the first visible content.
 
-cause - 
-blocking CSS
+Speed Index is 3.6s on mobile and 1.2s on desktop — slower processing and delayed resource loading cause the page to visually complete more slowly on mobile.
+
+cause:
+
+render-blocking CSS
 fonts loading late
-``
-
+heavy JavaScript execution
+slower simulated mobile CPU and network
 
 what slows the website most is 
 TBT - interaction delay
