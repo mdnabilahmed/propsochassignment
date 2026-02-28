@@ -139,5 +139,5 @@ div > div > div > section > wrapper > container >
 with cleaner structure and simpler layout result Result better FCP , speed Index.
 
 
-observation
+observation :-
 one thing i can say that my implementation has less code to render so thats why i got better results than the original website.
